@@ -27,5 +27,7 @@ Ankh.NoLoad
 packages
 *.nupkg
 
+settings.json
+
 # Allow NuGet specific exes and dlls
 !.nuget/Microsoft.Build.dll
