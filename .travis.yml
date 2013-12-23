@@ -14,7 +14,7 @@ before_install:
   # only for TravisCI
   - sudo echo "deb http://debian.meebey.net/experimental/mono /" | sudo tee -a /etc/apt/sources.list
   - sudo apt-get update > /dev/null
-  - sudo apt-get -d install --force-yes -y mono-complete mono-devel mono-gmcs
+  - sudo apt-get install --force-yes -y mono-complete mono-devel mono-gmcs
   - chmod a+x .ci/build.sh
 
 script:
