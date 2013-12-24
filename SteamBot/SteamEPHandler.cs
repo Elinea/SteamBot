@@ -1,10 +1,11 @@
 using SteamKit2;
 using System.Collections.Generic;
 using SteamTrade;
+using System;
 
 namespace SteamBot
 {
-    public class SteamTradeDemoHandler : UserHandler
+    public class SteamEPHandler : UserHandler
     {
         // NEW ------------------------------------------------------------------
         private GenericInventory mySteamInventory = new GenericInventory();
@@ -12,27 +13,53 @@ namespace SteamBot
         private bool tested;
         // ----------------------------------------------------------------------
 
-        public SteamTradeDemoHandler (Bot bot, SteamID sid) : base(bot, sid) {}
+		private Dictionary<string, string> messageResponses = new Dictionary<string, string> ();
+		private Random rnd = new Random ();
+		
+        public SteamEPHandler (Bot bot, SteamID sid) : base(bot, sid) {
+			messageResponses.Add ("hey", "Hello!|Howdy!|Oi!|Hey!|Hai!");
+			messageResponses.Add ("hello", "Hello!|Howdy!|Oi!|Hey!|Hai!");
+			messageResponses.Add ("help", "To use me, just send me a trade request and insert the items you want to give me!");
+			messageResponses.Add ("!help", "To use me, just send me a trade request and insert the items you want to give me!");
+			messageResponses.Add ("/help", "To use me, just send me a trade request and insert the items you want to give me!");
+		}
 
         public override bool OnFriendAdd () 
         {
-            Bot.log.Warn ("Accepting friend invite");
+            Log.Info("[SteamEP] Accepting friend invite");
             return true;
         }
 
-        public override void OnLoginCompleted() {}
+        public override void OnLoginCompleted() {
+            Log.Info("[SteamEP] SteamEPBot has launched succesfully! Inform the press!");
+        }
 
         public override void OnChatRoomMessage(SteamID chatID, SteamID sender, string message)
         {
-            Log.Info(Bot.SteamFriends.GetFriendPersonaName(sender) + ": " + message);
-            base.OnChatRoomMessage(chatID, sender, message);
+            Log.Info("[SteamEP] " + Bot.SteamFriends.GetFriendPersonaName(sender) + ": " + message);
+
         }
 
         public override void OnFriendRemove () {}
         
         public override void OnMessage (string message, EChatEntryType type) 
         {
-            Bot.SteamFriends.SendChatMessage(OtherSID, type, Bot.ChatResponse);
+			if (IsAdmin) {
+				switch (message.ToLower()) {
+					case "status":
+						Bot.SteamFriends.SendChatMessage (OtherSID, type, "NO STATUS LOL");
+						break;
+					case "sup":
+						Bot.SteamFriends.SendChatMessage (OtherSID, type, "WADUP BRO");
+						break;
+				}
+			}
+			if (messageResponses.ContainsKey (message)) {
+				string[] response = messageResponses [message].Split ('|');
+				Bot.SteamFriends.SendChatMessage (OtherSID, type, response [rnd.Next (1, response.Length + 1) - 1]);
+			} else {
+				Bot.SteamFriends.SendChatMessage(OtherSID, type, Bot.ChatResponse);
+			}
         }
 
         public override bool OnTradeRequest() 
@@ -42,18 +69,20 @@ namespace SteamBot
         
         public override void OnTradeError (string error) 
         {
-            Bot.SteamFriends.SendChatMessage (OtherSID, 
-                                              EChatEntryType.ChatMsg,
-                                              "Oh, there was an error: " + error + "."
-                                              );
-            Bot.log.Warn (error);
-
+			if (error == "Trade was closed by other user. Trade status: 4") {
+				Bot.SteamFriends.SendChatMessage (OtherSID, EChatEntryType.ChatMsg, "You cancelled :(");
+			} else {
+				Bot.SteamFriends.SendChatMessage (OtherSID, 
+					EChatEntryType.ChatMsg,
+					"Error: " + error + "."
+				);
+				Bot.log.Warn (error);
+			}
         }
         
         public override void OnTradeTimeout () 
         {
-            Bot.SteamFriends.SendChatMessage (OtherSID, EChatEntryType.ChatMsg,
-                                              "Sorry, but you were AFK and the trade was canceled.");
+			Bot.SteamFriends.SendChatMessage (OtherSID, EChatEntryType.ChatMsg, "Trade cancelled (Idle)");
             Bot.log.Info ("User was kicked because he was AFK.");
         }
         

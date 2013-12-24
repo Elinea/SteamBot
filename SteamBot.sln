@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleBot", "SteamBot\ExampleBot.csproj", "{E81DED36-EDF5-41A5-8666-A3A0C581762F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamTrade", "SteamTrade\SteamTrade.csproj", "{6CEC0333-81EB-40EE-85D1-941363626FC7}"
@@ -40,39 +40,6 @@ Global
 		Unity|x86 = Unity|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Any CPU.Build.0 = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|x86.ActiveCfg = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|x86.Build.0 = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Mixed Platforms.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Mixed Platforms.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Mixed Platforms.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Any CPU.ActiveCfg = Debug|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Mixed Platforms.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|x86.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Mixed Platforms.Build.0 = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|x86.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|Any CPU.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|Mixed Platforms.ActiveCfg = Release|x86
-		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|x86.ActiveCfg = Release|x86
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.CoreOnly|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.CoreOnly|Any CPU.Build.0 = Debug|Any CPU
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.CoreOnly|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -117,9 +84,41 @@ Global
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.Unity|Any CPU.Build.0 = Debug|Any CPU
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.Unity|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6CEC0333-81EB-40EE-85D1-941363626FC7}.Unity|x86.ActiveCfg = Release|Any CPU
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.CoreOnly|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Any CPU.Build.0 = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|x86.ActiveCfg = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Debug|x86.Build.0 = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|Mixed Platforms.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.iOS|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|Mixed Platforms.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Net20|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|Mixed Platforms.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Profile|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Any CPU.ActiveCfg = Debug|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Release|x86.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|Mixed Platforms.Build.0 = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Silverlight2|x86.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|Any CPU.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|Mixed Platforms.ActiveCfg = Release|x86
+		{E81DED36-EDF5-41A5-8666-A3A0C581762F}.Unity|x86.ActiveCfg = Release|x86
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = SteamBot\ExampleBot.csproj
@@ -131,22 +130,12 @@ Global
 		$2.inheritsSet = null
 		$2.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $3
-		$3.AnonymousMethodBraceStyle = NextLine
-		$3.PropertyBraceStyle = NextLine
-		$3.PropertyGetBraceStyle = NextLine
-		$3.PropertySetBraceStyle = NextLine
-		$3.EventBraceStyle = NextLine
-		$3.EventAddBraceStyle = NextLine
-		$3.EventRemoveBraceStyle = NextLine
-		$3.StatementBraceStyle = NextLine
-		$3.ElseNewLinePlacement = NewLine
-		$3.CatchNewLinePlacement = NewLine
-		$3.FinallyNewLinePlacement = NewLine
+		$3.IndentSwitchBody = True
 		$3.inheritsSet = Mono
 		$3.inheritsScope = text/x-csharp
 		$3.scope = text/x-csharp
 		$0.TextStylePolicy = $4
-		$4.FileWidth = 120
+		$4.TabsToSpaces = False
 		$4.inheritsSet = VisualStudio
 		$4.inheritsScope = text/plain
 		$4.scope = text/plain
@@ -307,6 +296,26 @@ Global
 		$33.NamingStyle = PascalCase
 		$33.IncludeInstanceMembers = True
 		$33.IncludeStaticEntities = True
+		$0.XmlFormattingPolicy = $35
+		$35.inheritsSet = Mono
+		$35.inheritsScope = application/xml
+		$35.scope = application/xml
+		$0.VersionControlPolicy = $36
+		$36.inheritsSet = Mono
+		$0.ChangeLogPolicy = $37
+		$37.inheritsSet = Mono
+		$0.TextStylePolicy = $38
+		$38.inheritsSet = null
+		$38.scope = application/xml
+		$0.TextStylePolicy = $39
+		$39.inheritsSet = null
+		$39.scope = application/config+xml
+		$0.XmlFormattingPolicy = $40
+		$40.inheritsSet = null
+		$40.scope = application/config+xml
 		outputpath = ..\Bin
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
